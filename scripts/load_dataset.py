@@ -1,7 +1,4 @@
-import sys
 from datasets import load_dataset, DatasetDict
-
-sys.path.append('.')
 
 def get_dataset():
     '''
