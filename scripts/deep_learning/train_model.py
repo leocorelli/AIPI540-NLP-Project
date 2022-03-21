@@ -15,11 +15,13 @@ def compute_metrics(eval_pred):
     predictions = np.argmax(logits, axis=-1)
     return metric.compute(predictions=predictions, references=labels)
 
-def train_model(tokenizer, model, tokenized_dataset, batch_size=16):
+def train_model(tokenizer, model, tokenized_dataset):
     if torch.cuda.is_available():
         fp16 = True
+        batch_size = 16
     else:
         fp16 = False
+        batch_size = 2
 
     training_args = TrainingArguments(output_dir=f"models/run{time.time()}", evaluation_strategy="epoch", save_strategy="epoch", num_train_epochs=25, fp16=fp16, per_device_train_batch_size=batch_size, per_device_eval_batch_size=batch_size, gradient_accumulation_steps=4, load_best_model_at_end=True)
     trainer = Trainer(model=model, args=training_args, train_dataset=tokenized_dataset['train'], eval_dataset=tokenized_dataset['val'], tokenizer=tokenizer, compute_metrics=compute_metrics, callbacks=[EarlyStoppingCallback(3, 0.0)])
