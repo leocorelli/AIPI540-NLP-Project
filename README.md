@@ -7,6 +7,10 @@ Predicting 1-5 Star Ratings on [100,000 Coursera Course Reviews Dataset](https:/
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/FiveStarsInline5.svg" width="400" /> 
 </p>
 
+# About
+
+In this project, we trained a deep-learning model (deberta-v3) and non-deep learning model (logistic regression with features from TF-IDF) to predict the star rating given by a user based on their corresponding written course review. We achieved 80.79% accuracy with our deep learning model and 77.90% accuracy with our logistic regression model on a test set of over 10,000 examples.
+
 # Instructions:
 Type in your terminal:
 1. `git clone https://github.com/leocorelli/AIPI540-NLP-Project.git`
@@ -26,7 +30,3 @@ Then type the following in your terminal:
 and lastly, to run type:
 
 8. `python3 main.py`
-
-# About
-
-In this project, we trained a deep-learning model (deberta-v3) and non-deep learning model (logistic regression with features from TF-IDF) to predict the number of stars for a written course review. We achieved 80.79% accuracy with our deep learning model and 77.90% accuracy with our logistic regression model.
