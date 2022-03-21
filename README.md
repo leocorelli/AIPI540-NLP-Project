@@ -1,4 +1,4 @@
-# AIPI 540 NLP Project
+# AIPI 540 NLP Module Project: Course Review Star Prediction
 **Christine Park, Miranda Morris, and Leo Corelli for Duke AIPI 540 Spring 2022**
 
 Predicting 1-5 Star Ratings on [100,000 Coursera Course Reviews Dataset](https://www.kaggle.com/septa97/100k-courseras-course-reviews-dataset)
