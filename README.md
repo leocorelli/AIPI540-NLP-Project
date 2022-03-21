@@ -9,8 +9,9 @@ Exploratory Notebook: https://colab.research.google.com/drive/1y75MEYgOhOFh8_Gjf
 Type the following in your terminal:
 1. `git clone https://github.com/leocorelli/AIPI540-NLP-Project.git`
 2. `python -m venv <VirtualEnvironmentName>`
-3. `make install`
-4. `python -m spacy download en_core_web_sm`
+3. `source <VirtualEnvironmentName>/bin/activate`
+4. `make install`
+5. `python -m spacy download en_core_web_sm`
 
 and lastly 
 
