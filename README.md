@@ -1,9 +1,11 @@
-# AIPI540-NLP-Project
+# AIPI 540 NLP Project
 **Christine Park, Miranda Morris, and Leo Corelli for Duke AIPI 540 Spring 2022**
 
-Dataset: https://www.kaggle.com/septa97/100k-courseras-course-reviews-dataset
+Predicting 1-5 Star Ratings on [100,000 Coursera Course Reviews Dataset](https://www.kaggle.com/septa97/100k-courseras-course-reviews-dataset)
 
-Exploratory Notebook: https://colab.research.google.com/drive/1y75MEYgOhOFh8_GjfzB4WA5QMe2SZhVr?usp=sharing
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/FiveStarsInline5.svg" width="400" /> 
+</p>
 
 # Instructions:
 Type in your terminal:
@@ -24,3 +26,7 @@ Then type the following in your terminal:
 and lastly, to run type:
 
 8. `python3 main.py`
+
+# About
+
+In this project, we trained a deep-learning model (deberta-v3) and non-deep learning model (logistic regression with features from TF-IDF) to predict the number of stars a written course review. We achieved 80.79% accuracy with our deep learning model and 77.90% accuracy with our logistic regression model.
