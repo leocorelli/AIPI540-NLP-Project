@@ -29,4 +29,4 @@ Then type the following in your terminal:
 
 and lastly, to run type:
 
-8. `python3 main.py`
+8. `python main.py`
