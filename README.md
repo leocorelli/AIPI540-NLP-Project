@@ -29,4 +29,4 @@ and lastly, to run type:
 
 # About
 
-In this project, we trained a deep-learning model (deberta-v3) and non-deep learning model (logistic regression with features from TF-IDF) to predict the number of stars a written course review. We achieved 80.79% accuracy with our deep learning model and 77.90% accuracy with our logistic regression model.
+In this project, we trained a deep-learning model (deberta-v3) and non-deep learning model (logistic regression with features from TF-IDF) to predict the number of stars for a written course review. We achieved 80.79% accuracy with our deep learning model and 77.90% accuracy with our logistic regression model.
