@@ -13,5 +13,5 @@ if __name__ == "__main__":
         if sentence == "STOP":
             break
         print("Deep learning:", classifier(sentence))
-        print("Non-Deep learning", logreg_predict(logreg_model, vec, sentence))
+        print("Non-Deep learning:", logreg_predict(logreg_model, vec, sentence))
         print()
